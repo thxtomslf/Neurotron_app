@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingWindow</class>
+ <widget class="QMainWindow" name="SettingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MIDI Settings</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="detectMIDIButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Detect MIDI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connectButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>240</y>
+      <width>671</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>State switches connections</string>
+       </property>
+       <widget class="QPushButton" name="stateButton_1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>251</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>State 1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stateButton_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>251</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>State 2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stateButton_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>251</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>State 3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stateButton_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>210</y>
+          <width>251</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>State 4</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stateButton_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>260</y>
+          <width>251</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>State 5</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stateButton_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>310</y>
+          <width>251</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>State 6</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>State space connections</string>
+       </property>
+       <widget class="QPushButton" name="alphaButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Alpha</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bettaButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Betta</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="spaceXButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Space x</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="spaceYButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>210</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Space y</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="meanStateButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Mean state</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonWay_1_2">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>60</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Way 1-2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonWay_2_1">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>110</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Way 2-1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonWay_1_3">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>160</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Way 1-3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonWay_3_1">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>210</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Way 3-1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonWay_2_3">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>260</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Way 2-3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonWay_3_2">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>310</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Way 3-2</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>50</y>
+      <width>331</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0" colspan="2">
+      <widget class="QComboBox" name="devicesComboBox">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Loop MIDI port</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Microsoft MIDI</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

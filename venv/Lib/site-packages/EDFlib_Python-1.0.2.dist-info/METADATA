@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: EDFlib-Python
+Version: 1.0.2
+Summary: Library to read/write EDF+/BDF+ files written in pure Python by the same author as the original EDFlib.
+Home-page: https://www.teuniz.net/edflib_python/
+Author: Teunis van Beelen
+Author-email: teuniz@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/Teuniz/EDFlib-Python/-/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.17)
+
+EDFlib for Python
+=================
+
+EDFlib for Python is a programming library to read/write EDF+ (16-bit) and BDF+ (24-bit) files, written in pure Python.
+
+For more info visit: https://www.teuniz.net/edflib_python/
+
+No merge/pull requests. If you want to report a bug, create an issue.
+
+License: 3-clause BSD license.
+
+Have a look at test_edfreader.py and test_edfwriter.py, they demonstrate how to use the library.
+
+You can generate documentation in HTML format by using the command: pydoc3 -w ./edfreader.py ./edfwriter.py
+
+
+

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1452</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Neurotrone music</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="connectButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="state_1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>170</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>State 1</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="state_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>230</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>State 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="state_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>290</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>State 3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="state_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>State 4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="state_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>410</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>State 5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="state_6">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>470</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>State 6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="runRecognitionButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>610</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Run
+recognition</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="midiSettButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>610</y>
+      <width>161</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MIDI
+settings</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="runMidiButtom">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>610</y>
+      <width>161</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Run MIDI</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>140</y>
+      <width>201</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="devSettButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>60</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Device settings</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>60</y>
+      <width>891</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="graph_layout"/>
+   </widget>
+   <widget class="QComboBox" name="y_scale_combo_box">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>20</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="currentText">
+     <string>1 uV/mm</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>15 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>25 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>30 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>60 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>65 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>70 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>100 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>125 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>200 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>350 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>500 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>750 uV/mm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1000 uV/mm</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="x_scale_combo_box">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>20</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>1 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>15 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>25 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>30 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>60 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>65 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>70 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>100 mm/sec</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>150 mm/sec</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
